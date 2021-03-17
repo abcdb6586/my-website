@@ -1,0 +1,101 @@
+.SwitchBtn {
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 0px 60px 0px rgba(0, 0, 0, 0.3);
+}
+
+.SwitchBtn button {
+  width: 5vw;
+  height: 45px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(42, 124, 145);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.SwitchBtn button span {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.Switch1 {
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 2px 5px;
+}
+
+.Switch2 {
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 2px 5px;
+}
+
+.SwitchBtn button:hover {
+  background-color: rgb(42, 124, 145);
+  color: rgb(255, 255, 255);
+}
+
+.SwitchBtn button:active {
+  background-color: rgb(214, 151, 34);
+  color: rgb(255, 255, 255);
+}
+
+.SwitchBtn button:disabled {
+  cursor: auto;
+  background-color: rgb(57, 82, 88);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1200px) {
+  .SwitchBtn {
+    right: 5%;
+    position: absolute;
+  }
+  .Switch1,
+  .Switch2 {
+    border-radius: 30px;
+  }
+  .Switch1 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .Switch2 {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+@media (max-width: 860px) {
+  .SwitchBtn {
+    top: 0;
+    right: 0;
+  }
+  .SwitchBtn button {
+    height: 7.5vh;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .SwitchBtn {
+    position: relative;
+    flex-direction: row;
+    bottom: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .SwitchBtn button {
+    width: 120px;
+    height: 60px;
+  }
+  .Switch1,
+  .Switch2 {
+    border-radius: 0;
+  }
+}

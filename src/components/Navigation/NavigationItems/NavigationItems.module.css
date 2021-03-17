@@ -1,0 +1,52 @@
+.NavigationItems {
+  display: flex;
+  align-items: center;
+}
+
+.NavLinks {
+  list-style: none;
+  position: relative;
+}
+
+.NavLinks li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2.9rem;
+}
+
+.NavLinks li a {
+  transition: all 0.3s ease 0s;
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.NavLinks li a:hover {
+  text-decoration: none;
+  color: rgba(202, 65, 65);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1200px) {
+  .NavLinks li a {
+    padding: 0 5px;
+    font-weight: 550;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .NavLinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .NavLinks li a {
+    padding: 0 3px;
+    font-weight: 550;
+    font-size: 1.5rem;
+    border-bottom: 5px;
+    color: rgb(210, 105, 30);
+  }
+}

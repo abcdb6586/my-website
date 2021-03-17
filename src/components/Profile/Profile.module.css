@@ -1,0 +1,106 @@
+.Profile {
+  width: 23%;
+  height: 75vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: fixed;
+  top: 18%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+}
+.Profile span {
+  font-size: 1.5rem;
+  font-weight: 850;
+}
+.Profile span h6 {
+  font-size: 1.5rem;
+}
+
+.Profile nav a {
+  color: rgba(58, 39, 9, 0.7);
+  cursor: pointer;
+}
+
+.Profile nav a:hover {
+  color: rgb(202, 65, 65);
+}
+
+.ProfilePic {
+  margin-bottom: 15px;
+}
+
+.SelfIntro {
+  background-color: rgba(202, 65, 65, 0.3);
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  padding: 10px;
+  margin-top: 2.5rem;
+  margin-bottom: auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.FlexCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.IconsFlex {
+  display: flex;
+  margin-top: 10px;
+}
+
+.IconsFlex div {
+  margin: 0 10px;
+}
+@media (max-width: 1450px) {
+  .Profile {
+    position: absolute;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Profile {
+    width: 28%;
+    left: 5%;
+  }
+}
+@media (max-width: 860px) {
+  .Profile {
+    width: 33%;
+    left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .Profile {
+    position: relative;
+    width: 80%;
+    margin: 5% 10%;
+    border-radius: 30px;
+    left: 0;
+    top: 0;
+  }
+  .Profile h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 499px) {
+  .Profile {
+    width: 90%;
+    margin: 5%;
+    padding: 5% 5%;
+  }
+  .Profile h6 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.Navbar {
+  width: 80%;
+  padding: 3% 1.7%;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: rgb(202, 65, 65);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat", "微軟正黑體", Arial, Helvetica, sans-serif;
+  z-index: 0;
+}
+
+.Navbar span {
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.Logo {
+  cursor: pointer;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.Logo a:hover {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+@media (max-width: 1200px) {
+  .Navbar {
+    width: 85vw;
+    left: 5vw;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .Navbar span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .Navbar {
+    height: 15vh;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    width: 95%;
+  }
+  .Navbar span {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .Navbar {
+    position: relative;
+    width: auto;
+  }
+  .DesktopOnly {
+    display: none;
+  }
+  .Navbar .Logo {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .Navbar span {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Navbar {
+    height: 10vh;
+  }
+}

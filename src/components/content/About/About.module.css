@@ -1,0 +1,111 @@
+.About {
+  margin: 0;
+  padding: 0;
+  width: 55%;
+  height: auto;
+  position: absolute;
+  top: 18%;
+  left: 35%;
+}
+
+.Card1 {
+  width: auto;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  align-items: center;
+  padding: 3% 3%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.Card2 {
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  align-items: center;
+  padding: 3% 3%;
+  position: relative;
+  margin-bottom: 30px;
+  background-color: rgba(202, 65, 65, 0.7);
+  color: rgb(255, 255, 255);
+}
+
+.Card1 h1 {
+  font-weight: 700;
+  padding-bottom: 4px;
+  border-bottom: 3px solid rgba(202, 65, 65, 0.7);
+  margin-bottom: 30px;
+}
+
+.Card1 p {
+  font-size: 20px;
+}
+
+.Card2 img {
+  border-radius: 15px;
+}
+
+.Card2 h1 {
+  font-weight: 700;
+  padding-bottom: 4px;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .About {
+    width: 60%;
+  }
+}
+@media (max-width: 860px) {
+  .About {
+    width: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .About {
+    position: relative;
+    width: 80%;
+    margin: 5% 10%;
+    border-radius: 30px;
+    left: 0;
+    top: 0;
+  }
+  .About h1 {
+    font-size: 1.8rem;
+  }
+  .Card1 {
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 0;
+    padding: 5% 5%;
+  }
+  .Card2 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 30px;
+    padding: 5% 5%;
+  }
+}
+@media (max-width: 499px) {
+  .About {
+    margin: 5%;
+    width: 90%;
+  }
+  .About h1 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 800px) {
+  .showProfile {
+    display: none;
+  }
+}
